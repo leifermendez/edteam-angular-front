@@ -1,5 +1,6 @@
 import { TestCourseService } from '@shared/services/test-course.service';
 import { Component, OnInit } from '@angular/core';
+import { NewTaskService } from '@modules/task/services/new-task.service';
 
 @Component({
   selector: 'app-header',
@@ -35,11 +36,13 @@ export class HeaderComponent implements OnInit {
     }
   ]
 
-  constructor(public testCourseService:TestCourseService){
+  constructor(
+    public testCourseService:TestCourseService){
 
   }
 
   ngOnInit(): void {
   }
+
 
 }
